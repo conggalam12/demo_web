@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .profile-card {
+            max-width: 800px;  /* Tăng kích thước tối đa */
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;  /* Để ảnh không bị tràn ra ngoài border-radius */
+        }
+
+        .profile-image-container {
+            width: 100%;
+            height: 400px;  /* Chiều cao cố định cho container ảnh */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* Đảm bảo ảnh lấp đầy container mà không bị méo */
+            display: block;
+        }
+
+        .profile-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .name {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: #666;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-button {
+            background: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-card {
+                margin: 10px;
+            }
+
+            .profile-image-container {
+                height: 300px;
+            }
+
+            .name {
+                font-size: 24px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+
+            .description {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-image-container">
+            <!-- Thay đường dẫn ảnh tại đây -->
+            <img src="ngan_u40.jpg" alt="Profile Image" class="profile-image">
+        </div>
+        
+        <div class="profile-content">
+            <h2 class="name">Nguyễn Thị Ngân</h2>
+            <div class="title">Chuyên viên tài chính tài năng</div>
+            <div class="description">
+                <p>
+                    Chuyên gia trong nhiều ngành:
+                    <br>• Ngành y
+                    <br>• Ngành kinh tế
+                    <br>Do bận trong quá trình công việc nên không có thời gian tìm người yêu.
+                </p>
+
+                <div class="highlight">
+                    <strong>Điều kiện bản thân:</strong>
+                    <br>• Đang đi làm ở một công ty nước ngoài
+                    <br>• Có thể độc lập về tài chính
+                </div>
+
+                <div class="highlight">
+                    <strong>Tính cách:</strong>
+                    <br>• Hiền lành dễ chịu
+                    <br>• Không hay cáu
+                    <br>• Nói một là một, hai là hai
+                    <br>• Không vòng vo
+                </div>
+
+                <div class="highlight">
+                    <strong>Mong muốn tìm bạn đời có tiêu chí sau:</strong>
+                    <br>• Độ tuổi: 29-34
+                    <br>• Khu vực: Ưu tiên Vĩnh Yên . Có thể Hà Nội
+                    <br>• Có chí tiến thủ , có công việc ổn định , tự do về tài chính
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="https://www.facebook.com/profile.php?id=100011629177706" target="_blank" class="contact-item">
+                    <i class="fab fa-facebook"></i>
+                    <span>Liên hệ qua nick Facebook</span>
+                </a>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
